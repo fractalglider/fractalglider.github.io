@@ -1,0 +1,11 @@
+repo_owner: fractalglider
+repo_name: fractalglider.github.io
+disabled: false
+use_show_action: false
+label_name: Post Comments
+label_color: 666666
+github_application:
+  client_id: 0912cb3ef40e0ecc7cdf
+  code_authenticator: https://fractalglider-gatekeeper.herokuapp.com/authenticate/
+  callback_url: https://fractalglider.github.io/public/html/gpgc_redirect/index.html
+enable_diagnostics: false
