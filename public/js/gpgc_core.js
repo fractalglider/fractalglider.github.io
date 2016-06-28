@@ -294,6 +294,7 @@ function onSearchComplete(searchRequest) {
     if (shouldQueryComments) {
       IssueUrl = searchResults.items[0].html_url;
       CommentsUrl = searchResults.items[0].comments_url;
+      insertIssueLink(IssueUrl);
       getGitHubApiRequestWithCompletion(
         CommentsUrl,
         /* data: */ null,
@@ -308,6 +309,11 @@ function onSearchComplete(searchRequest) {
   } else {
     onSearchError(searchRequest);
   }
+}
+
+function insertIssueLink(issueUrl) {
+  var issueLinkMessage = "<p>Comments to this post can also be created and viewed <a href=\"" + issueUrl + "\"> on GitHub.</a></p>";
+  document.getElementById("gpgc_issue_link").innerHTML = issueLinkMessage;
 }
 
 function onSearchError(searchRequest) {
