@@ -67,14 +67,14 @@ function initializeData() {
 }
 
 function retrieveToken() {
-  AccessToken = localStorage.getItem("AccessToken");
+  AccessToken = sessionStorage.getItem("AccessToken");
   if (AccessToken === null) {
     AccessToken = "";
   }
 }
 
 function persistToken() {
-  localStorage.setItem("AccessToken", AccessToken);
+  sessionStorage.setItem("AccessToken", AccessToken);
 }
 
 function clearToken() {
