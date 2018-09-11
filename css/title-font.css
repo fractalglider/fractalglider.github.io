@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Hypertext 4D';
+    src: url('/public/fonts/Hypertext4D.woff2') format('woff2'),
+        url('/public/fonts/Hypertext4D.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
